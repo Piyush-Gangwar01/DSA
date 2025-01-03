@@ -25,10 +25,15 @@ class GCD{
         }
         return gcd3(y,x%y);
     }
+    public static int LCM(int x, int y){
+        int lcm=(x*y)/gcd2(x,y);
+        return lcm;
+    }
     public static void main(String[] args) {
         gcd(14,16);
-        System.out.println(gcd2(14,16));
-        System.out.println(gcd3(14, 16));
+        System.out.println(gcd2(14,16));//  2 
+        System.out.println(gcd3(14, 16)); // 2 
+        System.out.println(gcd2(14,16)); // 112 
 
         
     }
