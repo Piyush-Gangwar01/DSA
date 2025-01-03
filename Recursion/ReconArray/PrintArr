@@ -1,0 +1,16 @@
+public class Print {
+    public static void Printarr(int arr[], int idx){
+        if(idx==arr.length){
+            return;
+        }
+        System.out.print(arr[idx]+" ");
+        Printarr(arr,idx+1);
+
+    }
+    public static void main(String[] args) {
+        int arr[]={1,2,6,3,7};
+        Printarr(arr, 0);
+        
+    }
+    
+}
