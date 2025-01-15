@@ -4,7 +4,7 @@ public class Insert {
     static Stack<Integer> add(Stack<Integer> st,int data,int idx){
         Stack<Integer> temp=new Stack<>();
         while(st.size()>idx){
-            temp.push((Integer) st.pop());
+            temp.push(st.pop());
         }
         st.push(data);
         while(temp.size()>0){
